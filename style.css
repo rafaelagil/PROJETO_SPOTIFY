@@ -1,39 +1,66 @@
- 
-/* Responsivo*/
-@media screen and (max-width: 768px) {
+/* Adicione estas regras de mídia no final do seu CSS */
+
+/* Estilo para telas menores ou iguais a 768 pixels */
+@media (max-width: 768px) and (max-width: 900px){
     #navbar .navbar-container {
-        width: 100%;
+        width: 90%; /* Reduza a largura da barra de navegação */
     }
-}
-@media screen and (max-width: 768px) {
+
+    #navbar .navbar-container ul {
+        flex-direction: column; /* Mude a direção dos itens da barra de navegação para coluna */
+        text-align: center; /* Centralize o texto na coluna */
+    }
+
+    #navbar .navbar-container ul li {
+        padding: 15px 0; /* Reduza o espaçamento entre os itens da barra de navegação */
+        border-right: none; /* Remova a borda direita do terceiro item (opcional) */
+    }
+
     #showcase .showcase-container h2 {
-        font-size: 4rem;
+        font-size: 3rem; /* Reduza o tamanho do texto no Showcase */
     }
 
     #showcase .showcase-container p {
-        font-size: 0.9rem;
+        font-size: 1rem; /* Reduza o tamanho do texto no Showcase */
     }
-}
 
-@media screen and (max-width: 768px) {
     #footer .footer-content {
-        width: 100%;
+        width: 90%; /* Reduza a largura do conteúdo do rodapé */
+        flex-direction: column; /* Altere a direção do conteúdo do rodapé para coluna */
+        text-align: center; /* Centralize o texto na coluna */
+    }
+    #footer .footer-content .logo{
+        width: 60%;
+        height: 60%;
         flex-direction: column;
-        align-items: center;
+    }
+
+    #footer .footer-content .footer-menu {
+        margin: 20px 0; /* Ajuste o espaçamento do menu no rodapé */
+    }
+
+    .socials i {
+        font-size: 1.5rem; /* Reduza o tamanho dos ícones sociais */
+    }
+
+    .footer-info {
+        width: 90%; /* Reduza a largura do bloco de informações no rodapé */
+    }
+
+    .footer-info .rights .country {
+        justify-content: center; /* Centralize o país no rodapé */
+    }
+
+    .footer-info .rights p {
+        font-size: 0.7rem; /* Reduza o tamanho do texto no bloco de informações no rodapé */
+    }
+
+    .footer-info .rights .country .brazil-flag {
+        height: 15px; /* Reduza o tamanho da bandeira do Brasil */
     }
 }
 
-.logo {
-    height: 4vh;  
-}
 
-body {
-    font-size: 1.6rem; 
-}
-
-#showcase .showcase-container h2 {
-    font-size: 3rem;  
-}
 
 
 :root {
